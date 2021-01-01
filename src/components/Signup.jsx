@@ -72,4 +72,4 @@ return(
 </Container>
 )
 }
-export default Signup
+export default Signup;
