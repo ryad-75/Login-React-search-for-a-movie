@@ -1,19 +1,23 @@
 import React,{useState} from 'react';
 import './App.css';
-import Signup from "./components/Signup"
-import Login from "./components/Login"
+import Signup from "./components/Signup";
+import Login from "./components/Login";
+import Forgot from "./components/Forgot";
+import DisplayTable from "./components/DisplayTable";
 
 function App() {
-const [setVerify]=useState({
+const [verify,setVerify]=useState({
   Login:true,
-  Signup:false
+  Signup:false,
+  Forgot:false,
+  Table:false
 })
 
-return (
-  <>
-    <Login setVerify={setVerify}/>
-    <Signup setVerify={setVerify}/>
-  </>
+  return (
+    <>
+     {
+     verify.Login?<Login setVerify={setVerify}/>:verify.Signup?<Signup setVerify={setVerify}/>:verify.Forgot?<Forgot setVerify={setVerify}/>:<DisplayTable  setVerify={setVerify}/>}
+    </>
   );
 }
 

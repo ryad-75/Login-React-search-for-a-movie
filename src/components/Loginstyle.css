@@ -1,0 +1,73 @@
+.n1 {
+    margin-right: 5px !important;
+}
+.forgot-container{
+    height: 100vh;
+}
+.text-presentation h2 {
+    font-size: 2.6rem;
+    margin-bottom: 0.5em;
+}
+.reset-password{
+    margin-top: 36vh;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(163, 205, 230);
+    color: rgb(48, 117, 145);
+}
+
+.container-login{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.container-presentation{
+    background-color: rgb(134, 191, 224);
+    width: 70%;
+}
+.text-presentation{
+    text-align: center;
+    padding: 3rem;
+    margin-top: 25vh
+
+}
+.container{
+    width: 70%;
+    margin-top: 15vh
+}
+img {
+    width: 120px;
+    height: 100px;
+    float: left;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .container-login{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .text-presentation {
+        padding: 1rem;
+        margin-top: 0;
+    }
+    .container-presentation {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        margin-top: 0;
+        padding: 1rem;
+        background-color: rgb(134, 191, 224);
+        height: 100vh;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: .375rem .7rem;
+    }
+}

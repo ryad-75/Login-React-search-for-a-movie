@@ -1,7 +1,8 @@
 import React,{useState} from "react"
-import Container from "react-bootstrap/Container"
-import Button from "react-bootstrap/Button"
-import Form from 'react-bootstrap/Form'
+import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
+import Form from 'react-bootstrap/Form';
+import Ryad from "./assets/Ryad.svg";
 
 
 const Signup=(props)=>{
@@ -38,38 +39,55 @@ const onSubmit=()=>{
           })
         alert("Login Now")
         props.setVerify({
-            Signup:false
-            });      
+            Login:true,
+            Signup:false,
+            Forgot:false,
+            Table:false
+            });       
         ;}
           else{
           alert("Wrong Password")}
 }
 return(
-    <Container>
-   <h1>Login Form</h1>
-<Form>
-  <Form.Group controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" onChange={idchanged}/>
-   
-  </Form.Group>
+  <div className="container-login">
+    <div className="container-presentation">
+    <img src={Ryad} alt="Logo" className="logo" />
+      <div className="text-presentation">
+        <h2>Welcome</h2> 
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis hic molestiae, nisi iusto nostrum! Itaque, velit? Reprehenderit cumque dicta numquam dolore, quos suscipit!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis hic molestiae, nisi iusto nostrum! Itaque, velit? Reprehenderit cumque dicta numquam dolore, quos suscipit!</p> <br/>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis hic molestiae, velit voluptate accusamus molestias omnis labore numquam nisi iusto nostrum! Itaque, velit? Reprehenderit cumque dicta numquam dolore, quos suscipit!</p>
+      </div>
+  </div>
 
-  <Form.Group controlId="formBasicPassword">
-    <Form.Label>Password</Form.Label>
-    <Form.Control type="password" placeholder="Password" onChange={pwd1changed}/>
-  </Form.Group>
-  <Form.Group controlId="formBasicPassword">
-    <Form.Label>Re enter Password</Form.Label>
-    <Form.Control type="password" placeholder="Password" onChange={pwd2changed}/>
-  </Form.Group>
-  <Form.Group controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
-  </Form.Group>
-  <Button variant="primary" type="button" onClick={onSubmit}>
-    Submit
-  </Button>
-</Form>
-</Container>
+  <div className="container">
+    <Container>
+        <h1>Login Form</h1>
+      <Form>
+        <Form.Group controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" onChange={idchanged}/>
+        
+        </Form.Group>
+
+        <Form.Group controlId="formBasicPassword">
+          <Form.Label>Password</Form.Label>
+          <Form.Control type="password" placeholder="Password" onChange={pwd1changed}/>
+        </Form.Group>
+        <Form.Group controlId="formBasicPassword">
+          <Form.Label>Re enter Password</Form.Label>
+          <Form.Control type="password" placeholder="Password" onChange={pwd2changed}/>
+        </Form.Group>
+        <Form.Group controlId="formBasicCheckbox">
+          <Form.Check type="checkbox" label="Check me out" />
+        </Form.Group>
+        <Button variant="primary" type="button" onClick={onSubmit}>
+          Submit
+        </Button>
+      </Form>
+      </Container>
+  </div>
+</div>
 )
 }
 export default Signup;
