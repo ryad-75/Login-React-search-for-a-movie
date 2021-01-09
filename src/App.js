@@ -16,7 +16,10 @@ const [verify,setVerify]=useState({
   return (
     <>
      {
-     verify.Login?<Login setVerify={setVerify}/>:verify.Signup?<Signup setVerify={setVerify}/>:verify.Forgot?<Forgot setVerify={setVerify}/>:<DisplayTable  setVerify={setVerify}/>}
+     verify.Login?<Login setVerify={setVerify}/>:verify.Signup?<Signup setVerify={setVerify}/>:verify.Forgot?<Forgot setVerify={setVerify}/>:<DisplayTable  />}
+    
+
+{/* <DisplayTable  /> */}
     </>
   );
 }

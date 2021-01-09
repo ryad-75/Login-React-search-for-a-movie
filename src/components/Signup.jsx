@@ -2,7 +2,7 @@ import React,{useState} from "react"
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Form from 'react-bootstrap/Form';
-import Ryad from "./assets/Ryad.svg";
+import Ryad from "./assets/Ryad.png";
 
 
 const Signup=(props)=>{
@@ -62,7 +62,7 @@ return(
 
   <div className="container">
     <Container>
-        <h1>Login Form</h1>
+        <h3>Login Form</h3>
       <Form>
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>

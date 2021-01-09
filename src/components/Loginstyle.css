@@ -5,36 +5,43 @@
     height: 100vh;
 }
 .text-presentation h2 {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5em;
 }
+h3{
+    color: rgb(90, 148, 151);
+}
 .reset-password{
-    margin-top: 36vh;
+    margin-top: 30vh;
     padding: 2rem;
     text-align: center;
-    background-color: rgb(163, 205, 230);
-    color: rgb(48, 117, 145);
+    color: rgb(255, 255, 255);
 }
-
+html {
+    background-color: darkcyan;
+}
 .container-login{
     display: flex;
     justify-content: space-around;
     height: 100vh;
+    background-color: white;
 }
 
 .container-presentation{
-    background-color: rgb(134, 191, 224);
+    background-color: darkcyan;
     width: 70%;
 }
 .text-presentation{
     text-align: center;
     padding: 3rem;
-    margin-top: 25vh
-
+    margin-top: 25vh;
+    color: azure;
 }
 .container{
-    width: 70%;
-    margin-top: 15vh
+    margin-top: 17vh
+}
+.container-movies{
+    margin-top: -12vh;
 }
 img {
     width: 120px;
@@ -60,14 +67,35 @@ img {
         width: 100%;
         margin-top: 0;
         padding: 1rem;
-        background-color: rgb(134, 191, 224);
-        height: 100vh;
+        background-color: darkcyan;
     }
     h1 {
         font-size: 2rem;
     }
-
+    h3{
+        font-size: 2rem;
+        color: rgb(190, 224, 226);
+    }
     .btn {
         padding: .375rem .7rem;
+    }
+    img {
+        width: 50px;
+        height: 40px;
+        padding: 5px;
+    }
+    .text-presentation h2 {
+        font-size: 2rem;
+        margin-right: 1em;
+    }
+    .reset-password{
+        margin-top: 30vh;
+    }
+    .reset-password h2{
+        font-size: 2rem;
+        color: rgb(190, 224, 226);
+    }
+    .container-movies{
+        margin-top: -2vh;
     }
 }

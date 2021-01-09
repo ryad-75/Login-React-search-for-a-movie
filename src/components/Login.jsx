@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 
 import Form from 'react-bootstrap/Form';
 import "./Loginstyle.css";
-import Ryad from "./assets/Ryad.svg";
+import Ryad from "./assets/Ryad.png";
 
 const Login=(props)=>{
 var valid=false;
@@ -78,7 +78,7 @@ return(
     </div>
     <div className="container">
         <Container>
-        <h1>Login Form</h1>
+        <h3 className="title-form">Login Form</h3>
         <Form>
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
