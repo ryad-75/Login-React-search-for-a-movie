@@ -17,9 +17,6 @@ const [verify,setVerify]=useState({
     <>
      {
      verify.Login?<Login setVerify={setVerify}/>:verify.Signup?<Signup setVerify={setVerify}/>:verify.Forgot?<Forgot setVerify={setVerify}/>:<DisplayTable  />}
-    
-
-{/* <DisplayTable  /> */}
     </>
   );
 }
