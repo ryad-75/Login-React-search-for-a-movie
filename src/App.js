@@ -1,9 +1,10 @@
 import React,{useState} from 'react';
+import Login from "./components/Login"
+
+import DisplayTable from "./components/DisplayTable"
 import './App.css';
-import Signup from "./components/Signup";
-import Login from "./components/Login";
-import Forgot from "./components/Forgot";
-import DisplayTable from "./components/DisplayTable";
+import Signup from "./components/Signup"
+import Forgot from "./components/Forgot"
 
 function App() {
 const [verify,setVerify]=useState({
@@ -16,10 +17,8 @@ const [verify,setVerify]=useState({
   return (
     <>
      {
-     verify.Login?<Login setVerify={setVerify}/>:verify.Signup?<Signup setVerify={setVerify}/>:verify.Forgot?<Forgot setVerify={setVerify}/>:<DisplayTable  />}
-    
-
-{/* <DisplayTable  /> */}
+     verify.Login?<Login setVerify={setVerify}/>:verify.Signup?<Signup setVerify={setVerify}/>:verify.Forgot?<Forgot setVerify={setVerify}/>:<DisplayTable  setVerify={setVerify}/>
+     }
     </>
   );
 }

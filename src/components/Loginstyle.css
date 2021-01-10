@@ -11,6 +11,9 @@
 h3{
     color: rgb(90, 148, 151);
 }
+h4{
+    color: rgb(212, 225, 226);
+}
 .reset-password{
     margin-top: 30vh;
     padding: 2rem;
@@ -75,7 +78,7 @@ img {
     h3{
         font-size: 2rem;
         color: rgb(190, 224, 226);
-    }
+    }  
     .btn {
         padding: .375rem .7rem;
     }
