@@ -70,9 +70,10 @@ return(
     <img src={Ryad} alt="Logo" className="logo" />
       <div className="text-presentation">
         <h2>Welcome</h2> 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis hic molestiae, nisi iusto nostrum! Itaque, velit? Reprehenderit cumque dicta numquam dolore, quos suscipit!</p>
-
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis hic molestiae, nisi iusto nostrum! Itaque, velit? Reprehenderit cumque dicta numquam dolore, quos suscipit!</p> <br/>
+          <p>Login React and search for a movie</p>
+          <p>A service that allows you to log in and search for a movie</p>
+          <br/>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis hic molestiae, nisi iusto nostrum! Itaque, velit? Reprehenderit cumque dicta numquam dolore, quos suscipit!</p> 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis hic molestiae, velit voluptate accusamus molestias omnis labore numquam nisi iusto nostrum! Itaque, velit? Reprehenderit cumque dicta numquam dolore, quos suscipit!</p>
         </div>
     </div>
