@@ -1,9 +1,6 @@
 .n1 {
     margin-right: 5px !important;
 }
-.forgot-container{
-    height: 100vh;
-}
 .text-presentation h2 {
     font-size: 2.5rem;
     margin-bottom: 0.5em;
@@ -16,6 +13,29 @@ h3{
     padding: 2rem;
     text-align: center;
     color: rgb(255, 255, 255);
+    width: fit-content;
+}
+.reset-password input{
+    color: white;
+}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: relative;
+    opacity: 0.7;
+}
+.logo .container{
+    width: 55%;
+}
+.reset-password h2{
+    font-size: 2.4rem;
+}
+.logo #formBasicEmail{
+    padding: 12px;
+    height: 1rem;
+    border-radius: 5px;
+}
+.logo img {
+    position : fixed; 
+    left : 10px; top : 10px;
 }
 html {
     background-color: darkcyan;
@@ -26,7 +46,9 @@ html {
     height: 100vh;
     background-color: white;
 }
-
+.logo label{
+    color:rgb(255, 255, 255);
+}
 .container-presentation{
     background-color: darkcyan;
     width: 70%;
@@ -38,7 +60,7 @@ html {
     color: azure;
 }
 .container{
-    margin-top: 17vh
+    margin-top: 17vh;
 }
 .container-movies{
     margin-top: -12vh;
@@ -50,6 +72,16 @@ img {
     padding: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+    .btn, .btn-large, .btn-small {
+        letter-spacing: 0;
+        margin-top: 5px;
+    }
+    .text-presentation {
+        padding: 2rem;
+        margin-top: 20vh;
+    }
+}
 @media only screen and (max-width: 500px) {
     .container-login{
         display: flex;
@@ -59,6 +91,7 @@ img {
     .text-presentation {
         padding: 1rem;
         margin-top: 0;
+        
     }
     .container-presentation {
         width: 100%;
@@ -76,9 +109,6 @@ img {
         font-size: 2rem;
         color: rgb(190, 224, 226);
     }
-    .btn {
-        padding: .375rem .7rem;
-    }
     img {
         width: 50px;
         height: 40px;
@@ -89,7 +119,12 @@ img {
         margin-right: 1em;
     }
     .reset-password{
-        margin-top: 30vh;
+        margin-top: 15vh;
+    }
+    #formBasicEmail{
+        border-radius: 2px;
+        padding: 4px;
+        height: 2rem;
     }
     .reset-password h2{
         font-size: 2rem;
@@ -97,5 +132,8 @@ img {
     }
     .container-movies{
         margin-top: -2vh;
+    }
+    .container form input{
+        color: white;
     }
 }
